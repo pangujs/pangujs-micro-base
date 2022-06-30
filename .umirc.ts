@@ -6,7 +6,6 @@ export default defineConfig({
   model: {},
   initialState: {},
   request: {},
-  layout: {},
   qiankun: {
     master: {},
   },

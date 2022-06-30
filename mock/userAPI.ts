@@ -5,7 +5,7 @@ const users = [
 
 const apps = [
   {
-    name: 'micro-nav',
+    name: 'pangujs-micro-nav',
     entry: '//localhost:7001',
   },
   {

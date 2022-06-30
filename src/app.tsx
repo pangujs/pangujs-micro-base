@@ -16,22 +16,6 @@ export async function getInitialState(): Promise<{
   };
 }
 
-export const layout: RunTimeLayoutConfig = ({
-  initialState,
-  setInitialState,
-}) => {
-  return {
-    // 常用配置
-    title: '微前端Demo',
-    logo: 'https://img.alicdn.com/tfs/TB1YHEpwUT1gK0jSZFhXXaAtVXa-28-27.svg',
-    layout: 'mix',
-    splitMenus: true,
-    // 默认布局调整
-    // 动态覆盖
-    ...initialState?.settings,
-  };
-};
-
 const { queryApps } = services.UserController;
 export const qiankun = async () => {
   const res = await queryApps();
